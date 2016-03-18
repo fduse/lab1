@@ -1,15 +1,20 @@
 package sizeFactor;
 
+import beverage.BeveSize;
+
 public class TeaBased implements SizeFactor {
 
 	@Override
-	public double sizeCost(String size) {
-		if (size.toLowerCase().equals("small")) {
+	public double sizeCost(BeveSize size) {
+		switch (size) {
+		case SMALL:
 			return 0.2;
-		} else if (size.toLowerCase().equals("medium")) {
+		case MEDIUM:
 			return 0.5;
-		} else {
+		case LARGE:
 			return 0.7;
+		default:  // GRANT
+			return 0.9;				
 		}
 	}
 

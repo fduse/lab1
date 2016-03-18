@@ -1,12 +1,12 @@
 package beverage;
 
-public class RedTea extends TeaBeverage {
+public class Decaf extends CoffeeBeverage {
 
 	public String getDescription() {
-		return "Red Tea";
+		return "Decaf";
 	}
 
 	public double cost() {
-		return super.cost() + 0.8;
+		return super.cost() + 0.5;
 	}
 }

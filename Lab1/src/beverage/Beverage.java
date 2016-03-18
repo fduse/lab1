@@ -1,4 +1,6 @@
-package lab1;
+package beverage;
+
+import sizeFactor.SizeFactor;
 
 public class Beverage {
 	protected SizeFactor sizeFactor;

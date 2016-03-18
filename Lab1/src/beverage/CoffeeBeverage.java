@@ -1,4 +1,6 @@
-package lab1;
+package beverage;
+
+import sizeFactor.CoffeeBased;
 
 public class CoffeeBeverage extends Beverage {
 	private String size;

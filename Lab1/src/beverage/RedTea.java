@@ -1,10 +1,11 @@
-package lab1;
+package beverage;
 
-public class HouseBlend extends CoffeeBeverage {
+
+public class RedTea extends TeaBeverage {
 	private String description;
 	
-	public HouseBlend() {
-		description = "HouseBlend";
+	public RedTea() {
+		description = "Red Tea";
 	}
 	
 	public String getDescription() {

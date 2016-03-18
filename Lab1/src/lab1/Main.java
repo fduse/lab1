@@ -1,6 +1,22 @@
 package lab1;
 
+import ingredient.BeverageWithIngredient;
+import ingredient.Chocolate;
+import ingredient.Ginger;
+import ingredient.Jasmine;
+import ingredient.Milk;
+import ingredient.WhipCream;
+
 import java.text.DecimalFormat;
+
+import beverage.Beverage;
+import beverage.CoffeeBeverage;
+import beverage.Espresso;
+import beverage.GreenTea;
+import beverage.HouseBlend;
+import beverage.RedTea;
+import beverage.TeaBeverage;
+import beverage.WhiteTea;
 
 public class Main {
 	public static void main(String[] args) {

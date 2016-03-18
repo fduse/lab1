@@ -1,4 +1,5 @@
-package lab1;
+package beverage;
+
 
 public class GreenTea extends TeaBeverage {
 	private String description;

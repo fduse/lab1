@@ -1,7 +1,7 @@
 # lab1 for Software Engineering Course
 ver 0.1.1
 
-##Attention: This branch "dev" is for development.
+## Attention: This branch "dev" is for development.
 Every time there is a new feature to work on or a bug to be fixed,
 
 A **new temporary branch** should be created for this **feature/bug**.
@@ -12,14 +12,18 @@ Every time a new version is about to come out(e.g: several features have been im
 
 
 
-##Several Tools:
+## Several Tools:
 - **IDE**:
   
-  [Intellij Idea](https://www.jetbrains.com/idea/)  
+  [eclipse](http://www.eclipse.org/downloads/)  
 
-- **Build System**:
+- **Compiler**:
   
-  [Gradle](http://gradle.org/getting-started-gradle-java/)
+  [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)
+
+- **Run Environment**:
+  
+  [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)
 
 - **Continuous Integration**:
 

@@ -6,7 +6,7 @@ public abstract class CoffeeBeverage extends Beverage {
 
 	public CoffeeBeverage() {
 		// the cost of size only related to the (base) kind of beverage
-		super.sizeFactor = new CoffeeBased();
+		sizeFactor = new CoffeeBased();
 	}
 	
 	public double cost() {

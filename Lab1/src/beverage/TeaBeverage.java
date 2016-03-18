@@ -2,18 +2,14 @@ package beverage;
 
 import sizeFactor.TeaBased;
 
-public class TeaBeverage extends Beverage {
-	private String size;
+public abstract class TeaBeverage extends Beverage {
 
 	public TeaBeverage() {
-		super.sizeFactor = new TeaBased();
-	}
-
-	public void setSize(String size) {
-		this.size = size;
+		// the cost of size only related to the (base) kind of beverage
+		sizeFactor = new TeaBased();
 	}
 
 	public double cost() {
-		return super.cost() + super.sizeFactor.sizeCost(size);
+		return super.cost();
 	}
 }

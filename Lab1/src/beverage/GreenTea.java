@@ -2,14 +2,9 @@ package beverage;
 
 
 public class GreenTea extends TeaBeverage {
-	private String description;
-	
-	public GreenTea() {
-		description = "Green Tea";
-	}
-	
-	public String getDiscription() {
-		return description;
+
+	public String getDescription() {
+		return "Green Tea";
 	}
 
 	public double cost() {

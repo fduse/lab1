@@ -1,15 +1,9 @@
 package beverage;
 
-
 public class Espresso extends CoffeeBeverage {
-	private String description;
-	
-	public Espresso() {
-		description = "Esspresso";
-	}
-	
+
 	public String getDescription() {
-		return description;
+		return "Esspresso";
 	}
 
 	public double cost() {

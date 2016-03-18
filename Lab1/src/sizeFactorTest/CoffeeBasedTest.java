@@ -1,4 +1,4 @@
-package beverageTest;
+package sizeFactorTest;
 
 
 import org.junit.Assert;

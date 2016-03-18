@@ -1,4 +1,6 @@
-package lab1;
+package ingredient;
+
+import beverage.Beverage;
 
 public class BeverageWithIngredient extends Beverage {
 	private Beverage drink;

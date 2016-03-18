@@ -1,10 +1,11 @@
-package lab1;
+package beverage;
 
-public class Espresso extends CoffeeBeverage {
+
+public class WhiteTea extends TeaBeverage {
 	private String description;
-	
-	public Espresso() {
-		description = "Esspresso";
+
+	public WhiteTea() {
+		description = "White Tea";
 	}
 	
 	public String getDescription() {

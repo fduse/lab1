@@ -1,4 +1,6 @@
-package lab1;
+package ingredient;
+
+import beverage.Beverage;
 
 public class Jasmine extends BeverageWithIngredient {
 	public Jasmine(Beverage drink) {

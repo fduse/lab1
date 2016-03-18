@@ -1,9 +1,11 @@
-package lab1;
+package beverageTest;
 
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import sizeFactor.CoffeeBased;
 
 public class CoffeeBasedTest {
 	CoffeeBased cb;

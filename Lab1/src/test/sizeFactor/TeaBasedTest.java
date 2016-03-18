@@ -1,4 +1,4 @@
-package sizeFactorTest;
+package test.sizeFactor;
 
 import org.junit.Assert;
 import org.junit.Before;

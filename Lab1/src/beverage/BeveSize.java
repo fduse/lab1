@@ -1,5 +1,5 @@
 package beverage;
 
 public enum BeveSize {
-	SMALL, MEDIUM, LARGE, GRANT;
+	EMPTY, SMALL, MEDIUM, LARGE, GRANT;
 }

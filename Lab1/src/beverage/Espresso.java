@@ -2,6 +2,10 @@ package beverage;
 
 public class Espresso extends CoffeeBeverage {
 
+	public Espresso() {
+		super();
+	}
+	
 	public String getDescription() {
 		return "Esspresso";
 	}

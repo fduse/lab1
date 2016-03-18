@@ -5,5 +5,6 @@ public class Beverage {
 
 	public double cost() {
 		return 0;
+		//込込込込込
 	}
 }

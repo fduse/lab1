@@ -22,10 +22,10 @@ public class DecafTest {
 	}
 	@Test(timeout=1000)
 	public void testCost() {
-		Assert.assertEquals(0.9, ds.cost(), 0);//0.4+0.5=0.9
-		Assert.assertEquals(1.2, dm.cost(), 0);//0.7+0.5=1.2
-		Assert.assertEquals(1.5, dl.cost(), 0);//1.0+0.5=1.5
-		Assert.assertEquals(1.8, dg.cost(), 0);//1.3+0.5=1.8
+		Assert.assertEquals(0.9, ds.cost(), 0.01);//0.4+0.5=0.9
+		Assert.assertEquals(1.2, dm.cost(), 0.01);//0.7+0.5=1.2
+		Assert.assertEquals(1.5, dl.cost(), 0.01);//1.0+0.5=1.5
+		Assert.assertEquals(1.8, dg.cost(), 0.01);//1.3+0.5=1.8
 
 		
 	}

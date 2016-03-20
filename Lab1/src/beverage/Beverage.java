@@ -16,11 +16,7 @@ public abstract class Beverage {
 	// abstract method
 	public abstract String getDescription();
 
-	// getter & setter
-	public BeveSize getSize() {
-		return size;
-	}
-	
+	// getter & setter	
 	public void setSize(BeveSize size) {
 		this.size = size;
 	}
@@ -29,8 +25,4 @@ public abstract class Beverage {
 		return type;
 	}
 	
-	// is coffee or tea ?
-	//public Beverage getBaseBeverage() {
-	//	return (this instanceof BeverageWithIngredient) ? ((BeverageWithIngredient) this).getDrink().getBaseBeverage() : this;
-	//}
 }

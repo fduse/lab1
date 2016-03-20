@@ -18,7 +18,7 @@ public class ChocolateTest {
 	 * with all kinds of size. and user can define their own drink
 	 * so I choose small mocha, medium decaf mocha,large houseblend with 2 chocolate, grant decaf with 3 chocolate
 	 * which means small espresso+chocolate,medium decaf+chocolate,large housblend+2*chocolate,grant decaf+3*chocolate
-	 * these four test data include all kind of coffee with all kind of size with 1 2 3 chocolate.
+	 * these four test data include all kinds of coffee with all kinds of size with 1 2 3 chocolate.
 	 * the abbr of them is ms,dmm,hl2c,dg3c
 	 */
 	Chocolate ms,dmm,hl2c,dg3c; 
@@ -45,7 +45,7 @@ public class ChocolateTest {
 		dg3c=new Chocolate(order);
 	}
 	
-	@Test
+	@Test(timeout=1000)
 	public void testCost() {						//size+beverage+ingredient
 		Assert.assertEquals(1.7, ms.cost(), 0.01);//0.4+1.0+0.3*1=1.7
 		Assert.assertEquals(1.5, dmm.cost(), 0.01);//0.7+0.5+0.3*1=1.5
@@ -53,7 +53,7 @@ public class ChocolateTest {
 		Assert.assertEquals(2.7, dg3c.cost(), 0.01);//1.3+0.5+0.3*3=2.7
 	}
 
-	@Test
+	@Test(timeout=1000)
 	public void testGetDescription() {
 		Assert.assertEquals("Esspresso chocolate", ms.getDescription());
 		Assert.assertEquals("Decaf chocolate", dmm.getDescription());

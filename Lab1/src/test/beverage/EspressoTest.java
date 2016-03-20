@@ -22,7 +22,7 @@ public class EspressoTest {
 		eg.setSize(BeveSize.GRANT);
 	}
 	@Test(timeout=1000)
-	public void testCost() {
+	public void testCost() {						//size+beverage
 		Assert.assertEquals(1.4, es.cost(), 0.01);//0.4+1.0=1.4
 		Assert.assertEquals(1.7, em.cost(), 0.01);//0.7+1.0=1.7
 		Assert.assertEquals(2.0, el.cost(), 0.01);//1.0+1.0=2.0

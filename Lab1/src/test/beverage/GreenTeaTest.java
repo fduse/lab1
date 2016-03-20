@@ -22,7 +22,7 @@ public class GreenTeaTest {
 		gtg.setSize(BeveSize.GRANT);
 	}
 	@Test(timeout=1000)
-	public void testCost() {
+	public void testCost() {						//size+beverage
 		Assert.assertEquals(1.2, gts.cost(), 0.01);//0.2+1.0=1.2
 		Assert.assertEquals(1.5, gtm.cost(), 0.01);//0.5+1.0=1.5
 		Assert.assertEquals(1.7, gtl.cost(), 0.01);//0.7+1.0=1.7

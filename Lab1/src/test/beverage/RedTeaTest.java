@@ -24,7 +24,7 @@ public class RedTeaTest {
 		rtg.setSize(BeveSize.GRANT);
 	}
 	@Test(timeout=1000)
-	public void testCost() {
+	public void testCost() {						//size+beverage
 		Assert.assertEquals(1.0, rts.cost(), 0.01);//0.2+0.8=1.0
 		Assert.assertEquals(1.3, rtm.cost(), 0.01);//0.5+0.8=1.3
 		Assert.assertEquals(1.5, rtl.cost(), 0.01);//0.7+0.8=1.5

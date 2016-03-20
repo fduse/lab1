@@ -23,7 +23,7 @@ public class HouseBlendTest {
 		hbg.setSize(BeveSize.GRANT);
 	}
 	@Test(timeout=1000)
-	public void testCost() {
+	public void testCost() {						//size+beverage
 		Assert.assertEquals(1.2, hbs.cost(), 0.01);//0.4+0.8=1.2
 		Assert.assertEquals(1.5, hbm.cost(), 0.01);//0.7+0.8=1.5
 		Assert.assertEquals(1.8, hbl.cost(), 0.01);//1.0+0.8=1.8

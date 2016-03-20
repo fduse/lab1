@@ -22,7 +22,7 @@ public class WhiteTeaTest {
 		wtg.setSize(BeveSize.GRANT);
 	}
 	@Test(timeout=1000)
-	public void testCost() {
+	public void testCost() {						//size+beverage
 		Assert.assertEquals(1.2, wts.cost(), 0.01);//0.2+1.0=1.2
 		Assert.assertEquals(1.5, wtm.cost(), 0.01);//0.5+1.0=1.5
 		Assert.assertEquals(1.7, wtl.cost(), 0.01);//0.7+1.0=1.7

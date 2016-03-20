@@ -1,11 +1,12 @@
 package ingredient;
 
+import beverage.BeveType;
 import beverage.Beverage;
 
 public class Chocolate extends BeverageWithIngredient {
 	
 	public Chocolate(Beverage drink) {
-		super(drink);
+		super(drink, BeveType.COFFEE);
 	}
 
 	public String getDescription() {

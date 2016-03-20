@@ -31,17 +31,8 @@ public class Main {
 		int i;  // beverage name's length(may be 1 or 2)
 		BeveSize size = BeveSize.EMPTY;  // beverage's size
 		for (i = 0; i < disArr.length; i++) {
-			if (disArr[i].equals("small")) {
-				size = BeveSize.SMALL;
-				break;
-			} else if (disArr[i].equals("medium")) {
-				size = BeveSize.MEDIUM;
-				break;
-			} else if (disArr[i].equals("large")) {
-				size = BeveSize.LARGE;
-				break;
-			} else if (disArr[i].equals("grant")) {
-				size = BeveSize.GRANT;
+			if (disArr[i].matches("^small$|^medium$|^large$|^grant$")) {
+				size = BeveSize.valueOf(disArr[i].toUpperCase());
 				break;
 			}
 		}
@@ -130,7 +121,7 @@ public class Main {
 		}*/
 		// and so on...
 
-		System.out.println("The order is:" + order.getDescription());
+		System.out.println("The order is: " + order.getDescription());
 		
 		DecimalFormat df = new DecimalFormat(".0");
 		System.out.println("The total cost of your order is: "

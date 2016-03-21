@@ -47,66 +47,86 @@ public class Main {
 		
 		// create base beverage
 		Beverage order;
-		if (beveStr.equals("espresso")) {
+		switch (beveStr) {
+		case "espresso":
 			order = new Espresso();
 			order.setSize(size);
-		} else if (beveStr.equals("houseblend")) {
+			break;
+		case "houseblend":
 			order = new HouseBlend();
 			order.setSize(size);
-		} else if (beveStr.equals("mocha")) {
+			break;
+		case "mocha":
 			order = new Espresso();
 			order.setSize(size);
 			order = new Chocolate(order);
-		} else if (beveStr.equals("latte")) {
+			break;
+		case "latte":
 			order = new Espresso();
 			order.setSize(size);
 			order = new Milk(order);
-		} else if (beveStr.equals("cappuccino")) {
+			break;
+		case "cappuccino":
 			order = new Espresso();
 			order.setSize(size);
 			order = new WhipCream(order);
-		} else if (beveStr.equals("green tea")) {
+			break;
+		case "green tea":
 			order = new GreenTea();
 			order.setSize(size);
-		} else if (beveStr.equals("red tea")) {
+			break;
+		case "red tea":
 			order = new RedTea();
 			order.setSize(size);
-		} else if (beveStr.equals("white tea")) {
+			break;
+		case "white tea":
 			order = new WhiteTea();
 			order.setSize(size);
-		} else if (beveStr.equals("flower tea")) {
+			break;
+		case "flower tea":
 			order = new GreenTea();
 			order.setSize(size);
 			order = new Jasmine(order);
-		} else if (beveStr.equals("ginger tea")) {
+			break;
+		case "ginger tea":
 			order = new GreenTea();
 			order.setSize(size);
 			order = new Ginger(order);
-		} else if (beveStr.equals("tea latte")) {
+			break;
+		case "tea latte":
 			order = new RedTea();
 			order.setSize(size);
 			order = new Milk(order);
-		} else {
+			break;
+		default:
 			showIllegalInput(beveStr);
 			return;
 		}
 
 
+
 		// add ingredient
 		for (i++; i < disArr.length; i++) {
-			if (disArr[i].equals("chocolate")) {
+			switch (disArr[i]) {
+			case "chocolate":
 				order = new Chocolate(order);
-			} else if (disArr[i].equals("ginger")) {
+				break;
+			case "ginger":
 				order = new Ginger(order);
-			} else if (disArr[i].equals("milk")) {
+				break;
+			case "milk":
 				order = new Milk(order);
-			} else if (disArr[i].equals("jasmine")) {
+				break;
+			case "jasmine":
 				order = new Jasmine(order);
-			} else if (disArr[i].equals("whip")) {
-				i++;  // 2 words "whip cream"
+				break;
+			case "whip":
+				i++;
 				order = new WhipCream(order);
-			} else {
+				break;
+			default:
 				showIllegalInput(disArr[i]);
+				return;
 			}
 		}
 

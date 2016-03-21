@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import beverage.BeveSize;
 import beverage.Beverage;
+import beverage.Decaf;
 import beverage.Espresso;
 import beverage.GreenTea;
 import beverage.HouseBlend;
@@ -37,7 +38,6 @@ public class Main {
 
 
         if(isNum(disArr[0])) {
-            //绗竴涓猘rg鏄痭umber,璇存槑鏄涓猳rders
             try{
             double cost = dealOrders(disArr);
             displayCost(cost);
@@ -62,16 +62,14 @@ public class Main {
     private static boolean isNum(String str) {
         return str.matches("[0-9]+");
     }
-
-    private static double dealOrders(String[] disArr) throws Exception{
+   //��Ԫ����ʱ�ĳ�Public
+    public static double dealOrders(String[] disArr) throws Exception{
         String str = "";
 
 
-        //寰楀埌璁㈠崟鏁�
+        //�õ�������
         int count = Integer.parseInt(disArr[0]);
 
-        //escape the first element: order number
-        //鎶婃墍鏈塧rgs杩炶捣鏉ュ啀閫氳繃;鍒嗗壊
         for (int i = 1; i < disArr.length; i++){
             if(i != disArr.length-1 && !disArr[i].equals(";")){
             str += (disArr[i]+" ");
@@ -79,7 +77,7 @@ public class Main {
                 str += disArr[i];
             }
         }
-        //鍒嗗壊
+
         String[] splittedArr = str.split(";");
 
 
@@ -111,9 +109,8 @@ public class Main {
     }
 
 
-
-
     private static double dealAnOrder(String[] disArr) throws Exception{
+
         int i;  // beverage name's length(may be 1 or 2)
         BeveSize size = BeveSize.EMPTY;  // beverage's size
         for (i = 0; i < disArr.length; i++) {
@@ -134,6 +131,25 @@ public class Main {
         // create base beverage
         Beverage order;
         switch (beveStr) {
+        	case "decaf":
+        		order = new Decaf();
+        		order.setSize(size);
+        		break;
+        	case "decaf mocha":
+        		order = new Decaf();
+        		order.setSize(size);
+        		order = new Chocolate(order);
+        		break;
+        	case "decaf latte":
+        		order = new Decaf();
+        		order.setSize(size);
+        		order = new Milk(order);
+        		break;
+        	case "decaf cappuccino":
+        		order = new Decaf();
+        		order.setSize(size);
+        		order = new WhipCream(order);
+        		break;
             case "espresso":
                 order = new Espresso();
                 order.setSize(size);

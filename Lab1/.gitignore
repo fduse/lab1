@@ -1,1 +1,6 @@
 /bin/
+.DS_Store
+.classpath
+.project
+Lab1.iml
+.settings/

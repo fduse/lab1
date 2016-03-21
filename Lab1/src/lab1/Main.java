@@ -109,7 +109,7 @@ public class Main {
     }
 
 
-    private static double dealAnOrder(String[] disArr) throws Exception{
+    public static double dealAnOrder(String[] disArr) throws Exception{
 
         int i;  // beverage name's length(may be 1 or 2)
         BeveSize size = BeveSize.EMPTY;  // beverage's size
